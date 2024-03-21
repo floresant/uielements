@@ -1,5 +1,28 @@
-.buttons {
+.buttonsgroup {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    background-color: pink;
+    height: 10vw;
+}
+
+#button1 {
+    background-color: #89CFF0;
+    border-radius: 5px;
+    box-shadow: 0px 0px;
+    transform: translate(0px, 0px);
+    transition: box-shadow 0.1s, translate 0.1s;
+}
+
+#button1:hover {
+    box-shadow: 1.5px 1.5px 2px;
+    transform: translate(-1.5px, -1.5px);
+    cursor: pointer;
+}
+
+#button1:active {
+    background-color: #6CB4EE;
+    transform: translate(0px, 0px);
+    box-shadow: none;
 }
