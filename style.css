@@ -5,6 +5,7 @@
     justify-content: space-between;
     background-color: pink;
     height: 10vw;
+    padding: 20px 0;
 }
 
 #button1 {
@@ -12,7 +13,10 @@
     border-radius: 5px;
     box-shadow: 0px 0px;
     transform: translate(0px, 0px);
-    transition: box-shadow 0.1s, translate 0.1s;
+    transition: box-shadow 0.1s, transform 0.1s;
+    width: 10%;
+    height: 18%;
+    font-size: 1.25vw;
 }
 
 #button1:hover {
@@ -26,3 +30,78 @@
     transform: translate(0px, 0px);
     box-shadow: none;
 }
+
+#button2 {
+    background-color: lightgreen;
+    border-radius: 10px;
+}
+/*
+#button2:hover {
+    cursor: pointer;
+}
+
+@keyframes rainbow {
+    0% {
+        background-position: 0%;
+    }
+    25% {
+        background-position: 25%;
+    }
+    50% {
+        background-position: 50%;
+    }
+    75% {
+        background-position: 75%;
+    }
+    100% {
+        background-position: 100%;
+    }
+}
+#button2:active {
+    animation: rainbow 0.5s linear;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+}
+*/
+#button2 {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: lightgreen;
+}
+
+#button2:hover {
+    background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, #ff0000);
+    background-size: 1000%;
+    animation: rainbow 2.5s linear infinite;
+}
+
+@keyframes rainbow {
+    0% {background-position: 0;}
+    100% {background-position: 110%;}
+}
+
+#button2:active {
+    transform: scale(0.9, 0.9);
+}
+
+#button3 {
+    cursor: pointer;
+    position: relative;
+    padding: 0.5% 2%;
+    border: black 3px solid;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+#button3:hover {
+    border: transparent;
+}
+
+
+
